@@ -84,5 +84,21 @@ public class pointTriangleTester {
     System.out.println("Expected: v1(0.0, 0.0) v2(0.0, 4.0) v3(2.0, 0.0)");
     System.out.print("Result: ");
     System.out.println(t4.toString());
+
+    System.out.println();
+    System.out.println("setVertex Tests:");
+    System.out.println(t4.toString());
+    t4.setVertex(0, p1);
+    System.out.println("Expected: v1(1.0, 1.0) v2(0.0, 4.0) v3(2.0, 0.0)");
+    System.out.print("Result: ");
+    System.out.println(t4.toString());
+    t4.setVertex(1, p2);
+    System.out.println("Expected: v1(1.0, 1.0) v2(10.0, 10.0) v3(2.0, 0.0)");
+    System.out.print("Result: ");
+    System.out.println(t4.toString());
+    t4.setVertex(2, p3);
+    System.out.println("Expected: v1(1.0, 1.0) v2(10.0, 10.0) v3(1.0, 1.0)");
+    System.out.print("Result: ");
+    System.out.println(t4.toString());
   }
 }
