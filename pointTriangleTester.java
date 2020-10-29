@@ -6,6 +6,7 @@ public class pointTriangleTester {
     Triangle t1 = new Triangle (0.5248, -0.8002, -2.437885, 1.94, 0.0, 0.0);
     Triangle t2 = new Triangle (0.0, 0.0, 0.0, 0.0, 426.9, 823.0);
     Triangle t3 = new Triangle (5.0, 5.0, 5.0, 5.0, 5.0, 5.0);
+    Triangle t4 = new Triangle (0.0, 0.0, 0.0, 4.0, 2.0, 0.0);
 
     System.out.println("distanceTo Tests:");
     System.out.println("Expected: 12.72792206...");
@@ -39,5 +40,20 @@ public class pointTriangleTester {
     System.out.println("Expected Value: 0.0");
     System.out.print("Result: ");
     System.out.println(t3.getPerimeter());
+
+    System.out.println();
+    System.out.println("getArea Tests:");
+    System.out.println("Expected Value: 0.46634178850000285");
+    System.out.print("Result: ");
+    System.out.println(t1.getArea());
+    System.out.println("Expected Value: 0.0");
+    System.out.print("Result: ");
+    System.out.println(t2.getArea());
+    System.out.println("Expected Value: 0.0");
+    System.out.print("Result: ");
+    System.out.println(t3.getArea());
+    System.out.println("Expected Value: 4.0");
+    System.out.print("Result: ");
+    System.out.println(t4.getArea());
   }
 }
