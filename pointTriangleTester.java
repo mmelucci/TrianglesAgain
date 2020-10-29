@@ -3,6 +3,9 @@ public class pointTriangleTester {
     Point p1 = new Point (1.0,1.0);
     Point p2 = new Point (10.0,10.0);
     Point p3 = new Point (p1);
+    Triangle t1 = new Triangle (0.5248, -0.8002, -2.437885, 1.94, 0.0, 0.0);
+    Triangle t2 = new Triangle (0.0, 0.0, 0.0, 0.0, 426.9, 823.0);
+    Triangle t3 = new Triangle (5.0, 5.0, 5.0, 5.0, 5.0, 5.0);
 
     System.out.println("distanceTo Tests:");
     System.out.println("Expected: 12.72792206...");
@@ -24,6 +27,17 @@ public class pointTriangleTester {
     if (p1.equals(p2) == false) {
       System.out.println("Different");
     }
+
     System.out.println();
+    System.out.println("getPerimeter Tests:");
+    System.out.println("Expected Value: 8.108143867816992");
+    System.out.print("Result: ");
+    System.out.println(t1.getPerimeter());
+    System.out.println("Expected Value: 1854.2627753368722");
+    System.out.print("Result: ");
+    System.out.println(t2.getPerimeter());
+    System.out.println("Expected Value: 0.0");
+    System.out.print("Result: ");
+    System.out.println(t3.getPerimeter());
   }
 }
