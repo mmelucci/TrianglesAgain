@@ -78,7 +78,11 @@ public class pointTriangleTester {
     System.out.println("Expected: equilateral");
     System.out.print("Result: ");
     System.out.println(t3.classify());
-  }
 
-    
+    System.out.println();
+    System.out.println("toString Tests:");
+    System.out.println("Expected: v1(0.0, 0.0) v2(0.0, 4.0) v3(2.0, 0.0)");
+    System.out.print("Result: ");
+    System.out.println(t4.toString());
+  }
 }
