@@ -23,4 +23,21 @@ public class Triangle {
                               * (semiper - v2.distanceTo(v3))
                               * (semiper - v3.distanceTo(v1))));
     }
+
+  private double roundtenthousandth(double value) {
+    return (Math.round(10000.0 * value)) / 10000.0;
+  }
+
+  public String classify() {
+      double s1 = roundtenthousandth(v1.distanceTo(v2));
+      double s2 = roundtenthousandth(v2.distanceTo(v3));
+      double s3 = roundtenthousandth(v3.distanceTo(v1));
+  if ((s1 == s2) && (s2 == s3)) {
+    return "equilateral";
+  }
+  if ((s1 == s2) || (s2 == s3) || (s1 == s3)) {
+    return "isosceles";
+  }
+  return "scalene";
+  }
 }
