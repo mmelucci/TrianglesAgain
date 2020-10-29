@@ -21,8 +21,15 @@ public class Point {
     return y;
   }
 
-  public double distanceTo(Point other){
+  public double distanceTo(Point other) {
     return Math.sqrt((Math.pow((this.x - other.getX()), 2.0) + Math.pow((this.y - other.getY()), 2.0)));
+  }
+
+  public boolean equals(Point other) {
+    if (this.x == other.getX() && this.y == other.getY()) {
+      return true;
+    }
+    return false;
   }
 
 }

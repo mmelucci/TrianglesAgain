@@ -11,5 +11,19 @@ public class pointTriangleTester {
     System.out.println("Expected: 0.0");
     System.out.print("Result: ");
     System.out.println(p3.distanceTo(p1));
+
+    System.out.println();
+    System.out.println("equals Tests:");
+    System.out.println("Expected: Same");
+    System.out.print("Result: ");
+    if (p1.equals(p3) == true) {
+      System.out.println("Same");
+    }
+    System.out.println("Expected: Different");
+    System.out.print("Result: ");
+    if (p1.equals(p2) == false) {
+      System.out.println("Different");
+    }
+    System.out.println();
   }
 }
